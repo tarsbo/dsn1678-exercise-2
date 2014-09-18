@@ -101,11 +101,31 @@ body {
 
   background-color: rgba(127, 219, 255, 0.6);
   transition: background-color 1000ms linear;
+  -webkit-animation: slide-up 3000ms ease-out;
+  animation: slide-up 3000ms ease-out;
 }
 
 .chart__bar:hover {
   background-color: rgba (145,205,235,0.7);
 }
+
+@-webkit-keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 
 .chart__count {
   display: inline-block;
